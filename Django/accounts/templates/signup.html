@@ -1,12 +1,16 @@
 {% extends 'home.html' %}
-
+{% block css %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'login.css'%}">
+    <title>Like Lion at YU</title>
+{% endblock %}
 {% block home %}
 <div class="center">
     <h1>Signup</h1>
     <form method="post" action="{% url 'signup' %}">
         {% csrf_token %}
         <div class="text_filed">
-            <input name = "username">
+            <input name = "username" type="text">
             <span></span>
             <label>Email</label>
         </div>
