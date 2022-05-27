@@ -1,0 +1,12 @@
+1, POST
+2, 2 : MTV , model template view 
+3,
+	1) python -m venv likelion
+	2) source ./likelion/bin/activate
+	3) pip install Django
+	4) django-admin startproject todolist
+	5) python manage.py startapp profile
+	6) python manage.py startapp calendar
+	7) python manage.py startapp home
+	   settings.py 파일에 들어가서 INSTALLED_APP 리스트에 'home' 추가해준다
+	8) python manage.py runserver

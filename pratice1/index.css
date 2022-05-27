@@ -1,0 +1,112 @@
+html,
+body {
+  height: 100%;
+}
+
+* {
+  background-color: black;
+  color: white;
+}
+
+.outer {
+  display: flex;
+  justify-content: space-around;
+  /* align-content: space-around; */
+  margin: 30px;
+
+}
+
+.innerLeft {
+  text-align: left;
+  width: 50%;
+}
+
+.innerRight {
+  padding-top: 25px;
+  text-align: center;
+  width: 50%;
+}
+
+.boxContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 150px;
+  height: 120px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 35px;
+  font-style: italic;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 80px;
+  padding-bottom: 70px;
+  border: 2px solid white;
+  background-color: white;
+  color: black;
+  border-radius: 15px;
+  vertical-align: middle;
+}
+
+input {
+  border-radius: 0px 25px 25px 0px;
+  margin: 8px;
+}
+
+.login {
+  background-color: white;
+  height: 35px;
+  width: 40%;
+  margin-left: -2px;
+  border: white;
+  color: black;
+}
+
+.submit {
+  background-color: orange;
+  border-radius: 25px;
+  height: 40px;
+  width: 25%;
+  text-align: center;
+  margin-top: 17px;
+}
+
+.logoImg {
+  display: flex;
+  height: 100px;
+  margin: 30px;
+  margin-top: 50px;
+}
+
+.title {
+  font-size: 47px;
+  font-style: italic;
+  margin-bottom: 0px;
+}
+
+.loginTitle {
+  font-size: 30px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+#icon {
+  /* display: flex; */
+  /* display: ; */
+  color: gray;
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  padding: 8.5px;
+  padding-right: 120px;
+  margin-right: -100px;
+  border-radius: 25px;
+}
