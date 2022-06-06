@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+<h2 class="alert alert-primary">글 제목 : {{ post_detail.title }}</h2>
+<span class="badge rounded-pill bg-light">작성 날짜 : {{ post_detail.date }}</span>
+<br/>
+<span class="badge rounded-pill bg-light">작성자 : {{ post_detail.author }}</span>
+<br />
+<p>{{ post_detail.body }}</p>
+
+
+{% for comment in post_detail.freecomment_set.all %}
+<span class="badge rounded-pill bg-light">{{ comment.date }}</span>
+{{comment}}
+<hr>
+{% endfor %}
+
+
+<form action="{% url 'new_freecomment' post_detail.id %}" method="post">
+    {% csrf_token %}
+    {{ comment_form }}
+    <input type="submit" value="submit">
+</form>
+
+{% endblock %}
